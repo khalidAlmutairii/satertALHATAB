@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> منيو شطيرة الحطب</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="website icon" type="png"
+    href="https://images.deliveryhero.io/image/hungerstation/restaurant/logo_ar/0d128461d600d58d8b1d77c613ebcd4a.jpeg?width=96&quality=75&webp=true">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="nav">
+      <div class="logo">
+        <p>&copy; 2025 تصميم بواسطة خالد المطيري</p>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/khalid-almutairi-940913330" target="_blank"><i
+              class="fab fa-linkedin"></i></a>
+          <a href="https://wa.me/96657207151" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="socials">
+        <img class="imgOfLogo" src="logo3.png" alt="Logo" />
+      </div>
+      <button class="order-btn"> <a href="#sala">طلبك 🛒 </a> </button>
+    </div>
+  </header>
+
+  <div class="categories">
+    <button><a href="#burger">🍔 برجر</a></button>
+    <button><a href="#shawrma"> 🌯شاورما</a></button>
+
+    <button><a href="#fatar"> 🫓الفطائر</a></button>
+    <button><a href="#drink"> 🥤مشروبات</a></button>
+    <button><a href="#pizza">🍕 بيتزا</a></button>
+
+  </div>
+
+  <main>
+
+    <section class="menu-section" id="burger">
+      <h2 class="section-title">🍔 قسم البرجر</h2>
+      <div class="cards">
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/hungerstation/menus/menuitem/hsimg-718967?width=128&quality=75&webp=true"
+            alt="Vegan Burger" />
+
+          <h3>برجر دجاج</h3>
+          <p> برجر دجاج المشوي </p>
+          <div class="card-footer">
+
+            <span class="price">ريال 8</span>
+            <button class="select-btn" onclick="sala('برجر دجاج', 8)">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/hungerstation/menus/menuitem/hsimg-718967?width=128&quality=75&webp=true"
+            alt="Vegan Burger" />
+
+          <h3>وجبة برجر دجاج</h3>
+          <p> برجر دجاج المشوي مع البطاطس والببسي</p>
+          <div class="card-footer">
+
+            <span class="price">ريال 13</span>
+            <button class="select-btn" onclick="sala('برجر دجاج وجبة', 13)">SELECT</button>
+          </div>
+        </div>
+
+
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/hungerstation/menus/menuitem/hsimg-718970?width=128&quality=75&webp=true"
+            alt="Vegan Burger" />
+
+          <h3>برجر لحم</h3>
+          <p> برجر اللحم المشوي </p>
+          <div class="card-footer">
+
+            <span class="price">ريال 10</span>
+            <button class="select-btn" onclick="sala(' برجر لحم مشوي ', 10 )">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/hungerstation/menus/menuitem/hsimg-718970?width=128&quality=75&webp=true"
+            alt="Vegan Burger" />
+
+          <h3>وجبة لحم دجاج</h3>
+          <p> برجر لحم المشوي مع البطاطس والببسي</p>
+          <div class="card-footer">
+
+            <span class="price">ريال 14</span>
+            <button class="select-btn" onclick="sala('وجبه برجر لحم مشوي  ', 14 )">SELECT</button>
+          </div>
+        </div>
+
+
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/hungerstation/menuitem/image/1e2d61b4e9b6c85a4bd13831d20513d5?width=128&quality=75&webp=true"
+            alt="Vegan Burger" />
+
+          <h3> برجر زنجر</h3>
+          <p> قطع زنجر مقلية مع خس وطماطم وصوص خاص</p>
+          <div class="card-footer">
+
+            <span class="price">ريال 11</span>
+            <button class="select-btn" onclick="sala(' برجر زنجر ', 11 )">SELECT</button>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/hungerstation/menuitem/image/1e2d61b4e9b6c85a4bd13831d20513d5?width=128&quality=75&webp=true"
+            alt="Vegan Burger" />
+
+          <h3>وجبة برجر زنجر</h3>
+          <p> قطع زنجر مقلية مع خس وطماطم وصوص خاص</p>
+          <div class="card-footer">
+
+            <span class="price">ريال 16</span>
+            <button class="select-btn" onclick="sala(' وجبة برجر زنجر ', 16 )">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/hungerstation/menus/menuitem/hsimg-718982?width=128&quality=75&webp=true"
+            alt="Vegan Burger" />
+
+          <h3>وجبة طفل</h3>
+          <p> برجر دجاج مشوي مع بطاطس وعصير</p>
+          <div class="card-footer">
+
+            <span class="price">ريال 13</span>
+            <button class="select-btn" onclick="sala(' وجبة طفل ', 13 )">SELECT</button>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </section>
+
+    <section class="menu-section" id="pizza">
+      <h2 class="section-title">🍕 قسم البيتزا</h2>
+      <div class="cards">
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/global-menu-service/HS_SA/vendor/98213/PRODUCT/76898005/13efcae9-904c-4db3-a2d4-56949b4a2e89.jpg?width=128&quality=75&webp=true"
+            alt="Pepperoni Pizza" />
+
+          <h3>بيتزا مارجريتا صغير</h3>
+          <p>بيتزا مع مكونات طازجة ولذيذة</p>
+          <div class="card-footer">
+            <span class="price">ريال 7</span>
+            <button class="select-btn" onclick="sala('بيتزا مارجريتا صغير  ', 7 )">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/global-menu-service/HS_SA/vendor/98213/PRODUCT/76898005/13efcae9-904c-4db3-a2d4-56949b4a2e89.jpg?width=128&quality=75&webp=true"
+            alt="Pepperoni Pizza" />
+
+          <h3>بيتزا مارجريتا وسط</h3>
+          <p>بيتزا مع مكونات طازجة ولذيذة</p>
+          <div class="card-footer">
+            <span class="price"> 14 ريال</span>
+            <button class="select-btn" onclick="sala(' بيتزا مارجريتا وسط ',14  )">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/global-menu-service/HS_SA/vendor/98213/PRODUCT/76898005/13efcae9-904c-4db3-a2d4-56949b4a2e89.jpg?width=128&quality=75&webp=true"
+            alt="Pepperoni Pizza" />
+
+          <h3>بيتزا مارجريتا كبير</h3>
+          <p>بيتزا مع مكونات طازجة ولذيذة</p>
+          <div class="card-footer">
+            <span class="price">21 ريال</span>
+            <button class="select-btn" onclick="sala('  بيتزا مارجريتا كبير', 21)">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/global-menu-service/HS_SA/vendor/98213/PRODUCT/418e54dd-bd9d-49cf-9472-0694bce0da82.jpg?width=128&quality=75&webp=true"
+            alt="Pepperoni Pizza" />
+
+          <h3>بيتزا دجاج صغير</h3>
+          <p>بيتزا قطع مع جبن وفلفل اخضر</p>
+          <div class="card-footer">
+            <span class="price">8 ريال </span>
+            <button class="select-btn" onclick="sala('  بيتزا دجاج صغير', 8 )">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/global-menu-service/HS_SA/vendor/98213/PRODUCT/418e54dd-bd9d-49cf-9472-0694bce0da82.jpg?width=128&quality=75&webp=true"
+            alt="Pepperoni Pizza" />
+
+          <h3>بيتزا دجاج وسط</h3>
+          <p>بيتزا قطع مع جبن وفلفل اخضر</p>
+          <div class="card-footer">
+            <span class="price">16 ريال </span>
+            <button class="select-btn" onclick="sala(' بيتزا دجاج وسط ', 16 )">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/global-menu-service/HS_SA/vendor/98213/PRODUCT/418e54dd-bd9d-49cf-9472-0694bce0da82.jpg?width=128&quality=75&webp=true"
+            alt="Pepperoni Pizza" />
+
+          <h3>بيتزا دجاج كبير</h3>
+          <p>بيتزا قطع مع جبن وفلفل اخضر</p>
+          <div class="card-footer">
+            <span class="price">ريال 25</span>
+            <button class="select-btn" onclick="sala('  بيتزا دجاج كبير', 25 )">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/global-menu-service/HS_SA/vendor/98213/PRODUCT/ff82fa65-9a57-45ef-8bfb-3679aba52d1e.jpg?width=128&quality=75&webp=true"
+            alt="Pepperoni Pizza" />
+
+          <h3>بيتزا شاورما صغير</h3>
+          <p>بيتزا قطع الشاورما مع الجبن</p>
+          <div class="card-footer">
+            <span class="price">ريال 10 </span>
+            <button class="select-btn" onclick="sala('  بيتزا شاورما صغير', 10 )">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/global-menu-service/HS_SA/vendor/98213/PRODUCT/ff82fa65-9a57-45ef-8bfb-3679aba52d1e.jpg?width=128&quality=75&webp=true"
+            alt="Pepperoni Pizza" />
+
+          <h3>بيتزا شاورما وسط</h3>
+          <p>بيتزا قطع الشاورما مع الجبن</p>
+          <div class="card-footer">
+            <span class="price">ريال 18 </span>
+            <button class="select-btn" onclick="sala(' بيتزا شاورما وسط ',18 )">SELECT</button>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/global-menu-service/HS_SA/vendor/98213/PRODUCT/ff82fa65-9a57-45ef-8bfb-3679aba52d1e.jpg?width=128&quality=75&webp=true"
+            alt="Pepperoni Pizza" />
+
+          <h3>بيتزا شاورما كبير</h3>
+          <p>بيتزا قطع الشاورما مع الجبن</p>
+          <div class="card-footer">
+            <span class="price">ريال 25</span>
+            <button class="select-btn" onclick="sala('  بيتزا شاورما كبير', 25 )">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/global-menu-service/HS_SA/vendor/98213/PRODUCT/07d1c045-7590-4775-8455-538a18115f1a.jpg?width=128&quality=75&webp=true"
+            alt="Pepperoni Pizza" />
+
+          <h3>بيتزا عش البلبل صغير</h3>
+          <p>بيتزا لبنة مع العسل</p>
+          <div class="card-footer">
+            <span class="price">ريال 7</span>
+            <button class="select-btn" onclick="sala(' بيتزا عش البلبل صغير', 7 )">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/global-menu-service/HS_SA/vendor/98213/PRODUCT/07d1c045-7590-4775-8455-538a18115f1a.jpg?width=128&quality=75&webp=true"
+            alt="Pepperoni Pizza" />
+
+          <h3>بيتزا عش البلبل وسط</h3>
+          <p>بيتزا لبنة مع العسل</p>
+          <div class="card-footer">
+            <span class="price">ريال 14 </span>
+            <button class="select-btn" onclick="sala(' بيتزا عش البلبل وسط ', 14 )">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/global-menu-service/HS_SA/vendor/98213/PRODUCT/07d1c045-7590-4775-8455-538a18115f1a.jpg?width=128&quality=75&webp=true"
+            alt="Pepperoni Pizza" />
+
+          <h3>بيتزا عش البلبل كبير</h3>
+          <p>بيتزا لبنة مع العسل</p>
+          <div class="card-footer">
+            <span class="price">ريال 21</span>
+            <button class="select-btn" onclick="sala('بيتزا عش البلبل كبير  ', 21 )">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/global-menu-service/HS_SA/vendor/15609/PRODUCT/0bf004fe-47ab-4048-9a1f-07cc9b486ccc.jpg?width=128&quality=75&webp=true"
+            alt="Pepperoni Pizza" />
+
+          <h3>بيتزا دجاج الباربيكيو صغير</h3>
+          <p>بيتزا عجينه خاصه مع الدجاج المكسيكي ومع الصوص الباربيكيو</p>
+          <div class="card-footer">
+            <span class="price">ريال 12</span>
+            <button class="select-btn" onclick="sala('  بيتزا دجاج الباربيكيو صغير',12)">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/global-menu-service/HS_SA/vendor/15609/PRODUCT/0bf004fe-47ab-4048-9a1f-07cc9b486ccc.jpg?width=128&quality=75&webp=true"
+            alt="Pepperoni Pizza" />
+
+          <h3>بيتزا دجاج الباربيكيو وسط</h3>
+          <p>بيتزا عجينه خاصه مع الدجاج المكسيكي ومع الصوص الباربيكيو</p>
+          <div class="card-footer">
+            <span class="price">ريال 20 </span>
+            <button class="select-btn" onclick="sala(' بيتزا دجاج الباربيكيو وسط ', 20 )">SELECT</button>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/global-menu-service/HS_SA/vendor/15609/PRODUCT/0bf004fe-47ab-4048-9a1f-07cc9b486ccc.jpg?width=128&quality=75&webp=true" />
+          <h3>بيتزا دجاج الباربيكيو كبير</h3>
+          <p>بيتزا عجينه خاصه مع الدجاج المكسيكي ومع الصوص الباربيكيو</p>
+          <div class="card-footer">
+            <span class="price">ريال 28</span>
+            <button class="select-btn" onclick="sala('بيتزا دجاج الباربيكيو كبير', 28)">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/global-menu-service/HS_SA/vendor/98213/PRODUCT/21ffa96e-a427-444a-a2f3-875a65bff3ed.jpg?width=128&quality=75&webp=true" />
+          <h3>بيتزا ببروني صغير</h3>
+          <p>بيتزا لذيذه محضره من الببروني وجبنه الموزريلا</p>
+          <div class="card-footer">
+            <span class="price">ريال 7</span>
+            <button class="select-btn" onclick="sala('بيتزا ببروني صغير', 7)">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/global-menu-service/HS_SA/vendor/98213/PRODUCT/21ffa96e-a427-444a-a2f3-875a65bff3ed.jpg?width=128&quality=75&webp=true" />
+          <h3>بيتزا ببروني وسط</h3>
+          <p>بيتزا لذيذه محضره من الببروني وجبنه الموزريلا</p>
+          <div class="card-footer">
+            <span class="price">ريال 14</span>
+            <button class="select-btn" onclick="sala('بيتزا ببروني وسط', 14)">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/global-menu-service/HS_SA/vendor/98213/PRODUCT/21ffa96e-a427-444a-a2f3-875a65bff3ed.jpg?width=128&quality=75&webp=true" />
+          <h3>بيتزا ببروني كبير</h3>
+          <p>بيتزا لذيذه محضره من الببروني وجبنه الموزريلا</p>
+          <div class="card-footer">
+            <span class="price">ريال 25</span>
+            <button class="select-btn" onclick="sala('بيتزا ببروني كبير', 25)">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/hungerstation/menuitem/image_url_ref/15a145a376d29d6e4e89671453ff8243.jpg?width=128&quality=75&webp=true" />
+          <h3>بيتزا شطيرة الحطب صغير</h3>
+          <p>بيتزا بطابع الحطب ونكهات شهية</p>
+          <div class="card-footer">
+            <span class="price">ريال 12</span>
+            <button class="select-btn" onclick="sala('بيتزا شطيرة الحطب صغير', 12)">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/hungerstation/menuitem/image_url_ref/15a145a376d29d6e4e89671453ff8243.jpg?width=128&quality=75&webp=true" />
+          <h3>بيتزا شطيرة الحطب وسط</h3>
+          <p>بيتزا بطابع الحطب ونكهات شهية</p>
+          <div class="card-footer">
+            <span class="price">ريال 20</span>
+            <button class="select-btn" onclick="sala('بيتزا شطيرة الحطب وسط', 20)">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/hungerstation/menuitem/image_url_ref/15a145a376d29d6e4e89671453ff8243.jpg?width=128&quality=75&webp=true" />
+          <h3>بيتزا شطيرة الحطب كبير</h3>
+          <p>بيتزا بطابع الحطب ونكهات شهية</p>
+          <div class="card-footer">
+            <span class="price">ريال 28</span>
+            <button class="select-btn" onclick="sala('بيتزا شطيرة الحطب كبير', 28)">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/global-menu-service/HS_SA/vendor/98213/PRODUCT/40174b1a-bfbf-4166-986d-aa8ccdef65d1.jpg?width=128&quality=75&webp=true" />
+          <h3>بيتزا دجاج رانش وسط</h3>
+          <p>بيتزا رانش دجاج بطبقة كريمية ونكهة غنيه</p>
+          <div class="card-footer">
+            <span class="price">ريال 16</span>
+            <button class="select-btn" onclick="sala('بيتزا دجاج رانش وسط', 16)">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/global-menu-service/HS_SA/vendor/98213/PRODUCT/40174b1a-bfbf-4166-986d-aa8ccdef65d1.jpg?width=128&quality=75&webp=true" />
+          <h3>بيتزا دجاج رانش كبير</h3>
+          <p>بيتزا رانش دجاج بطبقة كريمية ونكهة غنيه</p>
+          <div class="card-footer">
+            <span class="price">ريال 25</span>
+            <button class="select-btn" onclick="sala('بيتزا دجاج رانش كبير', 25)">SELECT</button>
+          </div>
+        </div>
+
+
+
+
+
+
+
+      </div>
+    </section>
+
+
+
+
+    <section class="menu-section" id="shawrma">
+      <h2 class="section-title">🌯 قسم الشاورما</h2>
+      <div class="cards">
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/global-menu-service/HS_SA/vendor/98213/PRODUCT/845669/df45e1be-23b7-4ef5-9dd1-e09ec37f6007.jpg?width=128&quality=75&webp=true" />
+          <h3>شاورما صغير</h3>
+          <div class="card-footer">
+            <span class="price">ريال 5</span>
+            <button class="select-btn" onclick="sala('شاورما صغير', 5)">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/hungerstation/menus/menuitem/hsimg-718868?width=128&quality=75&webp=true" />
+          <h3>شاورما تركي صغير</h3>
+          <div class="card-footer">
+            <span class="price">ريال 10</span>
+            <button class="select-btn" onclick="sala('شاورما تركي صغير', 10)">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/hungerstation/menus/menuitem/hsimg-718868?width=128&quality=75&webp=true" />
+          <h3>شاورما تركي كبير</h3>
+          <div class="card-footer">
+            <span class="price">ريال 14</span>
+            <button class="select-btn" onclick="sala('شاورما تركي كبير', 14)">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/hungerstation/menus/menuitem/hsimg-718894?width=128&quality=75&webp=true" />
+          <h3>شاورما عربي</h3>
+          <div class="card-footer">
+            <span class="price">ريال 16</span>
+            <button class="select-btn" onclick="sala('شاورما عربي', 16)">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/hungerstation/menus/menuitem/hsimg-718894?width=128&quality=75&webp=true" />
+          <h3>شاورما عربي دبل</h3>
+          <div class="card-footer">
+            <span class="price">ريال 18</span>
+            <button class="select-btn" onclick="sala('شاورما عربي دبل', 18)">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/hungerstation/menus/menuitem/hsimg-718894?width=128&quality=75&webp=true" />
+          <h3>شاورما عربي دبل مع جبن</h3>
+          <div class="card-footer">
+            <span class="price">ريال 20</span>
+            <button class="select-btn" onclick="sala('شاورما عربي دبل مع جبن', 20)">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/hungerstation/menus/menuitem/hsimg-718894?width=128&quality=75&webp=true" />
+          <h3>شاورما عربي وسط</h3>
+          <div class="card-footer">
+            <span class="price">ريال 11</span>
+            <button class="select-btn" onclick="sala('شاورما عربي وسط', 11)">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/global-menu-service/HS_SA/vendor/98213/PRODUCT/80122731/2eb4483d-8a07-4ef3-9553-1d56bfd53de3.jpg?width=128&quality=75&webp=true" />
+          <h3>شاورما أمريكي</h3>
+          <div class="card-footer">
+            <span class="price">ريال 18</span>
+            <button class="select-btn" onclick="sala('شاورما أمريكي', 18)">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/global-menu-service/HS_SA/vendor/98213/PRODUCT/25f7939b-038d-49ea-b5a2-8e969e749309.jpg?width=128&quality=75&webp=true" />
+          <h3>شاورما جامبو</h3>
+          <div class="card-footer">
+            <span class="price">ريال 25</span>
+            <button class="select-btn" onclick="sala('شاورما جامبو', 25)">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/global-menu-service/HS_SA/vendor/98213/PRODUCT/80247505/d539e378-afd3-4ab6-a8d4-d08af9237161.jpg?width=128&quality=75&webp=true" />
+          <h3>شاورما صامولي</h3>
+          <div class="card-footer">
+            <span class="price">ريال 7</span>
+            <button class="select-btn" onclick="sala('شاورما صامولي', 7)">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/global-menu-service/HS_SA/vendor/98213/PRODUCT/43982508/3a8a3990-3458-4825-b7c3-8fe5083514be.jpg?width=128&quality=75&webp=true" />
+          <h3>كباب ساندويتش لحم صغير</h3>
+          <div class="card-footer">
+            <span class="price">ريال 7</span>
+            <button class="select-btn" onclick="sala('كباب ساندويتش لحم صغير', 7)">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/global-menu-service/HS_SA/vendor/98213/PRODUCT/43982508/3a8a3990-3458-4825-b7c3-8fe5083514be.jpg?width=128&quality=75&webp=true" />
+          <h3>كباب ساندويتش لحم كبير</h3>
+          <div class="card-footer">
+            <span class="price">ريال 11</span>
+            <button class="select-btn" onclick="sala('كباب ساندويتش لحم كبير', 11)">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/hungerstation/menuitem/image/db1921f56bc34f183cc86697ce96653f?width=128&quality=75&webp=true" />
+          <h3>تشكن تويستر</h3>
+          <div class="card-footer">
+            <span class="price">ريال 16</span>
+            <button class="select-btn" onclick="sala('تشكن تويستر', 16)">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/hungerstation/menuitem/image/db1921f56bc34f183cc86697ce96653f?width=128&quality=75&webp=true" />
+          <h3>وجبة تويستر</h3>
+          <div class="card-footer">
+            <span class="price">ريال 20</span>
+            <button class="select-btn" onclick="sala('وجبة تويستر', 20)">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/hungerstation/menus/menuitem/hsimg-1264909?width=128&quality=75&webp=true" />
+          <h3>بطاطس - صغير</h3>
+          <div class="card-footer">
+            <span class="price">ريال 5</span>
+            <button class="select-btn" onclick="sala('بطاطس - صغير', 5)">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/hungerstation/menus/menuitem/hsimg-1264909?width=128&quality=75&webp=true" />
+          <h3>بطاطس - كبير</h3>
+          <div class="card-footer">
+            <span class="price">ريال 7</span>
+            <button class="select-btn" onclick="sala('بطاطس - كبير', 7)">SELECT</button>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </section>
+
+
+
+
+
+    <section class="menu-section" id="fatar">
+      <h2 class="section-title">🫓 قسم الفطائر</h2>
+      <div class="cards">
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/hungerstation/menus/menuitem/hsimg-26021918?width=128&quality=75&webp=true" />
+          <h3>فطيرة شاورما</h3>
+          <div class="card-footer">
+            <span class="price">ريال 9</span>
+            <button class="select-btn" onclick="sala('فطيرة شاورما', 9)">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/global-menu-service/HS_SA/vendor/98213/PRODUCT/718919/1f4d3ffa-a542-4dac-b5b6-2655f85319dd.jpg?width=128&quality=75&webp=true" />
+          <h3>فطيرة لبنة</h3>
+          <div class="card-footer">
+            <span class="price">ريال 5</span>
+            <button class="select-btn" onclick="sala('فطيرة لبنة', 5)">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/global-menu-service/HS_SA/vendor/98213/PRODUCT/27014465/12d0bdc7-0ba6-4ac3-96e8-fd4017e23b28.jpg?width=128&quality=75&webp=true" />
+          <h3>شطيرة فلافل</h3>
+          <div class="card-footer">
+            <span class="price">ريال 6</span>
+            <button class="select-btn" onclick="sala('شطيرة فلافل', 6)">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/hungerstation/menus/menuitem/hsimg-718926?width=128&quality=75&webp=true" />
+          <h3>فطيرة جبن سائل</h3>
+          <div class="card-footer">
+            <span class="price">ريال 6</span>
+            <button class="select-btn" onclick="sala('فطيرة جبن سائل', 6)">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/hungerstation/menus/menuitem/hsimg-718935?width=128&quality=75&webp=true" />
+          <h3>فطيرة زعتر</h3>
+          <div class="card-footer">
+            <span class="price">ريال 5</span>
+            <button class="select-btn" onclick="sala('فطيرة زعتر', 5)">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/hungerstation/menus/menuitem/hsimg-718945?width=128&quality=75&webp=true" />
+          <h3>فطيرة سبانخ</h3>
+          <div class="card-footer">
+            <span class="price">ريال 6</span>
+            <button class="select-btn" onclick="sala('فطيرة سبانخ', 6)">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/global-menu-service/HS_SA/vendor/98213/PRODUCT/718958/c22240aa-c0cc-4f38-973b-ae8e0d3b1ec4.jpg?width=128&quality=75&webp=true" />
+          <h3>فطيرة فلافل</h3>
+          <div class="card-footer">
+            <span class="price">ريال 6</span>
+            <button class="select-btn" onclick="sala('فطيرة فلافل', 6)">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/global-menu-service/HS_SA/vendor/98213/PRODUCT/44376ceb-cf32-45fb-8f48-6a34d9aaba17.webp?width=128&quality=75&webp=true" />
+          <h3>فطيرة جبن قشوان</h3>
+          <div class="card-footer">
+            <span class="price">ريال 7</span>
+            <button class="select-btn" onclick="sala('فطيرة جبن قشوان', 7)">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/global-menu-service/HS_SA/vendor/98213/PRODUCT/911d0a64-fdc9-4073-a1af-159e1aedb0f7.webp?width=128&quality=75&webp=true" />
+          <h3>فطيرة جبن عكاوي</h3>
+          <div class="card-footer">
+            <span class="price">ريال 7</span>
+            <button class="select-btn" onclick="sala('فطيرة جبن عكاوي', 7)">SELECT</button>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+      </div>
+    </section>
+
+
+
+    <section class="menu-section" id="drink">
+      <h2 class="section-title">🥤 قسم المشروبات</h2>
+      <div class="cards">
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/hungerstation/menuitem/image_url_ref/b797fff1b0c90982e9c174b841ab4b9d.jpg?width=128&quality=75&webp=true"
+            alt="Pepperoni Pizza" />
+
+          <h3> ماء </h3>
+
+          <div class="card-footer">
+            <span class="price">ريال 1</span>
+            <button class="select-btn" onclick="sala('  ماء ', 1)">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/hungerstation/menuitem/image_url_ref/8d0a55cfddde967706c0adb222f0d2ea.png?width=128&quality=75&webp=true"
+            alt="Pepperoni Pizza" />
+
+
+          <h3> ببسي </h3>
+
+          <div class="card-footer">
+            <span class="price">ريال 2.5</span>
+            <button class="select-btn" onclick="sala(' ببسي ',2.5 )">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/hungerstation/product/image_url_ref/7f4e58cf0e032595a71c2fbf9810b53a.jpg?width=128&quality=75&webp=true"
+            alt="Pepperoni Pizza" />
+
+
+          <h3> حمضيات </h3>
+
+          <div class="card-footer">
+            <span class="price">ريال 2.5</span>
+            <button class="select-btn" onclick="sala('حمضيات   ',2.5)">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/hungerstation/menus/menuitem/hsimg-15958563?width=128&quality=75&webp=true"
+            alt="Pepperoni Pizza" />
+
+
+          <h3> سفن اب </h3>
+
+          <div class="card-footer">
+            <span class="price">ريال 2.5</span>
+            <button class="select-btn" onclick="sala('  سفن اب', 2.5)">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/hungerstation/menuitem/image_url_ref/fa3c571c0525f4b0c9a1cc68bd04df02.jpg?width=128&quality=75&webp=true"
+            alt="Pepperoni Pizza" />
+
+
+          <h3> ديو </h3>
+
+          <div class="card-footer">
+            <span class="price">ريال 2.5</span>
+            <button class="select-btn" onclick="sala('  ديو',  2.5)">SELECT</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://images.deliveryhero.io/image/hungerstation/menus/menuitem/hsimg-7889403?width=128&quality=75&webp=true"
+            alt="Pepperoni Pizza" />
+
+
+          <h3> عصير الربيع </h3>
+
+          <div class="card-footer">
+            <span class="price">ريال 2</span>
+            <button class="select-btn" onclick="sala('  عصير ربيع', 2)">SELECT</button>
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+    </section>
+
+
+    <section class="menu-section" id="sala">
+      <h2 class="section-title">السلة </h2>
+
+      <div class="salaa">
+
+        <ul id='li'> </ul>
+        <p> الاجمالي : <span id='total-price'>0</span></p>
+
+
+
+        <button onclick="sendWatsap()"> ارسال الطلب الى الواتس اب </button>
+
+
+      </div>
+
+
+
+
+      </div>
+    </section>
+
+
+
+
+
+
+
+  </main>
+
+
+
+
+
+
+  <script>
+    let salatotal = [];
+
+    let theList = document.getElementById('li');
+    let theTotalPrce = document.getElementById('total-price');
+    let phoneNumber = 966543653992;
+
+    function sala(name1, price1) {
+      salatotal.push({ name: name1, price: price1 });
+      show();
+    }
+
+    function show() {
+      theList.innerHTML = "";
+      let total = 0;
+
+      for (let i = 0; i < salatotal.length; i++) {
+        let li = document.createElement('li');
+        li.textContent = salatotal[i].name + " - " + salatotal[i].price + " ريال ";
+
+
+        let delBtn = document.createElement('button');
+        delBtn.textContent = "حذف";
+        delBtn.style.marginLeft = "10px";
+
+
+        delBtn.onclick = function () {
+          salatotal.splice(i, 1);
+          show();
+        };
+
+        li.appendChild(delBtn);
+        theList.appendChild(li);
+
+        total += salatotal[i].price;
+      }
+
+      theTotalPrce.textContent = total;
+    }
+
+
+
+    function sendWatsap() {
+
+      if (salatotal.length == 0) {
+        alert("يرجى التعبيه");
+        return;
+      }
+
+      let message = " \nالسلام عليكم يرجي تجهيز طلبي \n\n";
+
+      for (let i = 0; i < salatotal.length; i++) {
+
+        message += salatotal[i].name + " - " + salatotal[i].price + " ريال \n\n";
+
+
+      }
+      message += " \nالاجمالي : " + theTotalPrce.textContent + " ريال \n";
+
+
+
+
+      let whatsappUr1l = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
+      window.open(whatsappUr1l, "_blank");
+
+    }
+
+
+
+
+
+
+  </script>
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,547 @@
+/* ========== القواعد العامة ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  color: #2c2c2c;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ========== رأس الصفحة ========== */
+header {
+  background: #9c3a29;
+  padding: 1rem 2rem;
+  color: #fff;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo p {
+  font-size: 0.8rem;
+  margin-bottom: 0.3rem;
+  color: #fff;
+}
+
+.logo .links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.logo .links a {
+  color: #fff;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.logo .links a:hover {
+  color: #ffd700;
+}
+
+.socials img {
+  height: 80px;
+  width: auto;
+}
+
+.order-btn {
+  background: #fff;
+  color: #9c3a29;
+  padding: 0.6rem 1.6rem;
+  border-radius: 30px;
+  font-weight: 700;
+  border: 2.5px solid #9c3a29;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(156, 58, 41, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.order-btn a {
+  text-decoration: none;
+  color: #9c3a29;
+  letter-spacing: 0.8px;
+  transition: color 0.3s ease;
+}
+
+.order-btn:hover {
+  background-color: #9c3a29;
+  color: #fff;
+  box-shadow: 0 12px 30px rgba(156, 58, 41, 0.8);
+  border-color: #7a2b1e;
+}
+
+.order-btn:hover a {
+  color: #fff;
+}
+
+/* ========== أزرار الأقسام ========== */
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem auto;
+  flex-wrap: wrap;
+  max-width: 900px;
+}
+
+.categories button {
+  padding: 0.6rem 1.6rem;
+  border: none;
+  background: #f7f7f7;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #6b231b;
+  box-shadow: 0 4px 12px rgba(156, 58, 41, 0.1);
+  transition: background-color 0.4s ease, color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.categories button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.categories button:hover {
+  background: #9c3a29;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(156, 58, 41, 0.4);
+}
+
+/* ========== أقسام القائمة ========== */
+.menu-section {
+  padding: 50px 20px 35px;
+  scroll-margin-top: 140px;
+  border-bottom: 2px solid #ddd;
+  background: #fff;
+  max-width: 1200px;
+  margin: 0 auto 50px auto;
+  border-radius: 20px;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.05);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 28px;
+  color: #7a2617;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 12px;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #9c3a29, #6b231b);
+  margin: 12px auto 0;
+  border-radius: 3px;
+}
+
+/* ========== شبكة البطاقات ========== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 25px;
+  box-shadow: 0 14px 28px rgba(156, 58, 41, 0.15);
+  padding: 1.3rem 1.6rem 1.8rem;
+  font-size: 1rem;
+  color: #444;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(156, 58, 41, 0.3);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  border-radius: 20px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* محتوى البطاقة */
+h3 {
+  margin-bottom: 0.4rem;
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: #3a1200;
+  letter-spacing: 0.5px;
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.8rem;
+  min-height: 48px;
+  line-height: 1.4;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.card-footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: #6b231b;
+  letter-spacing: 0.7px;
+}
+
+.select-btn {
+  background: transparent;
+  border: 3px solid #b71234;
+  padding: 0.5rem 1.1rem;
+  border-radius: 30px;
+  color: #b71234;
+  font-weight: 900;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(183, 18, 52, 0.3);
+}
+
+.select-btn:hover {
+  background-color: #b71234;
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(183, 18, 52, 0.6);
+}
+
+/* الشارات */
+.badges {
+  margin-bottom: 0.5rem;
+}
+
+.badge {
+  padding: 0.3rem 0.7rem;
+  border-radius: 18px;
+  font-size: 0.75rem;
+  margin-right: 0.5rem;
+  display: inline-block;
+  user-select: none;
+  font-weight: 700;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-transform: uppercase;
+}
+
+.badge.green {
+  background: #a3e635;
+  color: #1a4d00;
+  box-shadow: 0 4px 10px #91c91a7f;
+}
+
+.badge.blue {
+  background: #38bdf8;
+  color: #0c4a6e;
+  box-shadow: 0 4px 10px #22a3e98c;
+}
+
+.badge.purple {
+  background: #c084fc;
+  color: #4c1d95;
+  box-shadow: 0 4px 10px #9f6efc7d;
+}
+
+/* السلة */
+footer {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 1100;
+}
+
+.cart {
+  background: linear-gradient(145deg, #fff, #e8e8e8);
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 15px #b9b9b9, -5px -5px 15px #ffffff;
+  font-size: 1.3rem;
+  position: relative;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.cart:hover {
+  box-shadow: 8px 8px 25px #b71234aa, -8px -8px 25px #ff6b6baa;
+}
+
+.cart-count {
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  background: #b71234;
+  color: #fff;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  box-shadow: 0 0 6px #b71234cc;
+}
+
+/* صندوق السلة */
+.salaa {
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  background: #f9f9f9;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.salaa ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+.salaa ul li {
+  padding: 10px;
+  border-bottom: 1px dashed #bbb;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.salaa ul li:last-child {
+  border-bottom: none;
+}
+
+.salaa p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.salaa button {
+  background: #9c3a29;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.salaa button:hover {
+  background: #7a2d22;
+}
+
+/* زر حذف العناصر في السلة */
+.salaa ul li button {
+  background: #9c3a29;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.salaa ul li button:hover {
+  background: #7a2d22;
+}
+
+/* ========== استجابة الشاشات ========== */
+
+/* تابلت */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem 1.5rem;
+    gap: 1rem;
+  }
+
+  .nav {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .order-btn {
+    width: 100%;
+    max-width: 220px;
+  }
+
+  .socials img {
+    height: 70px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card img {
+    height: 140px;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+    padding-bottom: 6px;
+  }
+
+  .categories {
+    gap: 0.75rem;
+  }
+
+  .categories button {
+    font-size: 1rem;
+    padding: 0.5rem 1.2rem;
+  }
+
+  .salaa {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .salaa ul li {
+    font-size: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .salaa ul li button {
+    margin-top: 6px;
+  }
+}
+
+/* جوال */
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.8rem;
+  }
+
+  .logo {
+    align-items: center;
+  }
+
+  .logo p {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+
+  .logo .links {
+    justify-content: center;
+  }
+
+  .socials img {
+    height: 60px;
+  }
+
+  .order-btn {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .categories {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+
+  .categories button {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.9rem;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr); /* صفين في الجوال */
+    gap: 1rem;
+  }
+
+  .card img {
+    height: 110px;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .price {
+    font-size: 1rem;
+  }
+
+  .salaa {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .salaa ul li {
+    font-size: 14px;
+  }
+}
+
